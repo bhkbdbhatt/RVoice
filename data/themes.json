@@ -1,0 +1,264 @@
+[
+  {
+    "themeId": "theme-0347a238-7387-4a21-963e-1811d503d016",
+    "sourceId": "0347a238-7387-4a21-963e-1811d503d016",
+    "text": "The checkout process was extremely slow and kept failing on payment",
+    "product": "checkout",
+    "store": "store-42",
+    "journeyStage": "checkout",
+    "source": "web",
+    "sentiment": "negative",
+    "score": -1,
+    "confidence": 0.53,
+    "aspects": [
+      {
+        "aspect": "checkout",
+        "sentiment": "negative",
+        "score": -1,
+        "confidence": 0.53,
+        "matchedTerms": [
+          "slow"
+        ],
+        "negated": false
+      }
+    ],
+    "createdAt": "2026-08-07T10:38:23.038Z",
+    "sentimentScore": -1,
+    "issueScore": 2.3,
+    "severity": "medium"
+  },
+  {
+    "themeId": "theme-0bd24660-f2a2-4422-b3e6-b1c0f1c5cb18",
+    "sourceId": "0bd24660-f2a2-4422-b3e6-b1c0f1c5cb18",
+    "text": "Delivery took 5 days longer than promised, very disappointed",
+    "product": "delivery",
+    "store": "store-42",
+    "journeyStage": "delivery",
+    "source": "email",
+    "sentiment": "neutral",
+    "score": 0,
+    "confidence": 0.3,
+    "aspects": [
+      {
+        "aspect": "delivery",
+        "sentiment": "neutral",
+        "score": 0,
+        "confidence": 0.3,
+        "matchedTerms": [],
+        "negated": false
+      },
+      {
+        "aspect": "app",
+        "sentiment": "neutral",
+        "score": 0,
+        "confidence": 0.3,
+        "matchedTerms": [],
+        "negated": false
+      }
+    ],
+    "createdAt": "2026-08-07T10:38:23.050Z",
+    "sentimentScore": 0,
+    "issueScore": 2.2,
+    "severity": "medium"
+  },
+  {
+    "themeId": "theme-b0785bc3-af23-4ab1-aa7d-8f90292f3a90",
+    "sourceId": "b0785bc3-af23-4ab1-aa7d-8f90292f3a90",
+    "text": "Customer support was unhelpful and I had to wait 30 minutes",
+    "product": "support",
+    "store": "store-15",
+    "journeyStage": "support",
+    "source": "app",
+    "sentiment": "neutral",
+    "score": 0,
+    "confidence": 0.3,
+    "aspects": [
+      {
+        "aspect": "customer support",
+        "sentiment": "neutral",
+        "score": 0,
+        "confidence": 0.3,
+        "matchedTerms": [],
+        "negated": false
+      },
+      {
+        "aspect": "store experience",
+        "sentiment": "neutral",
+        "score": 0,
+        "confidence": 0.3,
+        "matchedTerms": [],
+        "negated": false
+      }
+    ],
+    "createdAt": "2026-08-07T10:38:23.061Z",
+    "sentimentScore": 0,
+    "issueScore": 2.2,
+    "severity": "medium"
+  },
+  {
+    "themeId": "theme-cbb4a563-0d6f-4ff4-b6ee-921d25359913",
+    "sourceId": "cbb4a563-0d6f-4ff4-b6ee-921d25359913",
+    "text": "The product quality is excellent, very happy with my purchase",
+    "product": "product",
+    "store": "store-42",
+    "journeyStage": "post-purchase",
+    "source": "web",
+    "sentiment": "positive",
+    "score": 1,
+    "confidence": 0.77,
+    "aspects": [
+      {
+        "aspect": "checkout",
+        "sentiment": "positive",
+        "score": 1,
+        "confidence": 0.77,
+        "matchedTerms": [
+          "excellent",
+          "happy"
+        ],
+        "negated": false
+      },
+      {
+        "aspect": "product quality",
+        "sentiment": "positive",
+        "score": 1,
+        "confidence": 0.77,
+        "matchedTerms": [
+          "excellent",
+          "happy"
+        ],
+        "negated": false
+      },
+      {
+        "aspect": "app",
+        "sentiment": "positive",
+        "score": 1,
+        "confidence": 0.77,
+        "matchedTerms": [
+          "excellent",
+          "happy"
+        ],
+        "negated": false
+      }
+    ],
+    "createdAt": "2026-08-07T10:38:23.068Z",
+    "sentimentScore": 1,
+    "issueScore": 0.4,
+    "severity": "low"
+  },
+  {
+    "themeId": "theme-955d1a18-872e-44f1-bec4-933d2e40c178",
+    "sourceId": "955d1a18-872e-44f1-bec4-933d2e40c178",
+    "text": "Store staff were rude and unhelpful during my visit",
+    "product": "store",
+    "store": "store-15",
+    "journeyStage": "purchase",
+    "source": "store",
+    "sentiment": "neutral",
+    "score": 0,
+    "confidence": 0.3,
+    "aspects": [
+      {
+        "aspect": "store experience",
+        "sentiment": "neutral",
+        "score": 0,
+        "confidence": 0.3,
+        "matchedTerms": [],
+        "negated": false
+      }
+    ],
+    "createdAt": "2026-08-07T10:38:23.078Z",
+    "sentimentScore": 0,
+    "issueScore": 1.2,
+    "severity": "low"
+  },
+  {
+    "themeId": "theme-2e67d415-6901-4610-ae6f-9988fc01cfac",
+    "sourceId": "2e67d415-6901-4610-ae6f-9988fc01cfac",
+    "text": "Love the new app interface, very easy to use",
+    "product": "app",
+    "store": "store-42",
+    "journeyStage": "awareness",
+    "source": "app",
+    "sentiment": "positive",
+    "score": 1,
+    "confidence": 0.73,
+    "aspects": [
+      {
+        "aspect": "app",
+        "sentiment": "positive",
+        "score": 1,
+        "confidence": 0.73,
+        "matchedTerms": [
+          "love",
+          "easy"
+        ],
+        "negated": false
+      }
+    ],
+    "createdAt": "2026-08-07T10:38:23.085Z",
+    "sentimentScore": 1,
+    "issueScore": 0.4,
+    "severity": "low"
+  },
+  {
+    "themeId": "theme-1b0c58c1-6ebb-47e0-9bf3-8352fb27aa79",
+    "sourceId": "1b0c58c1-6ebb-47e0-9bf3-8352fb27aa79",
+    "text": "The delivery driver left my package in the rain",
+    "product": "delivery",
+    "store": "store-15",
+    "journeyStage": "delivery",
+    "source": "social",
+    "sentiment": "neutral",
+    "score": 0,
+    "confidence": 0.28,
+    "aspects": [
+      {
+        "aspect": "delivery",
+        "sentiment": "neutral",
+        "score": 0,
+        "confidence": 0.28,
+        "matchedTerms": [],
+        "negated": false
+      }
+    ],
+    "createdAt": "2026-08-07T10:38:23.092Z",
+    "sentimentScore": 0,
+    "issueScore": 1.1,
+    "severity": "low"
+  },
+  {
+    "themeId": "theme-e6aa6728-6aef-4557-85ec-624f38a95cd4",
+    "sourceId": "e6aa6728-6aef-4557-85ec-624f38a95cd4",
+    "text": "Checkout keeps crashing on mobile, cannot complete my order",
+    "product": "checkout",
+    "store": "store-42",
+    "journeyStage": "checkout",
+    "source": "app",
+    "sentiment": "neutral",
+    "score": 0,
+    "confidence": 0.3,
+    "aspects": [
+      {
+        "aspect": "checkout",
+        "sentiment": "neutral",
+        "score": 0,
+        "confidence": 0.3,
+        "matchedTerms": [],
+        "negated": true
+      },
+      {
+        "aspect": "app",
+        "sentiment": "neutral",
+        "score": 0,
+        "confidence": 0.3,
+        "matchedTerms": [],
+        "negated": true
+      }
+    ],
+    "createdAt": "2026-08-07T10:38:23.102Z",
+    "sentimentScore": 0,
+    "issueScore": 2.2,
+    "severity": "medium"
+  }
+]

@@ -1,0 +1,73 @@
+---
+// Ingest: submit feedback and trigger the analysis pipeline.
+---
+
+<div class="section-header">
+  <div>
+    <h1>Ingest</h1>
+    <p class="section-subtitle">Submit feedback and trigger analysis pipeline</p>
+  </div>
+</div>
+
+<div class="ingest-grid">
+  <div class="card">
+    <h3>Submit Feedback</h3>
+    <form id="ingest-form">
+      <div class="form-group">
+        <label>Feedback Text *</label>
+        <textarea id="ingest-text" rows="4" placeholder="Enter customer feedback..." required></textarea>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label>Source</label>
+          <select id="ingest-source" title="Feedback source">
+            <option value="web">Web</option>
+            <option value="email">Email</option>
+            <option value="app">Mobile App</option>
+            <option value="store">In-Store</option>
+            <option value="social">Social Media</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Product</label>
+          <input type="text" id="ingest-product" placeholder="e.g. checkout" />
+        </div>
+        <div class="form-group">
+          <label>Store</label>
+          <input type="text" id="ingest-store" placeholder="e.g. store-42" />
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label>Journey Stage</label>
+          <select id="ingest-stage" title="Journey stage">
+            <option value="">Select stage...</option>
+            <option value="awareness">Awareness</option>
+            <option value="consideration">Consideration</option>
+            <option value="purchase">Purchase</option>
+            <option value="checkout">Checkout</option>
+            <option value="delivery">Delivery</option>
+            <option value="post-purchase">Post-Purchase</option>
+            <option value="support">Support</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Rating (1-5)</label>
+          <input type="number" id="ingest-rating" min="1" max="5" placeholder="Optional" />
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary" id="btn-ingest-submit">Submit Feedback</button>
+    </form>
+    <div id="ingest-result" class="result-box"></div>
+  </div>
+
+  <div class="card">
+    <h3>Analysis Pipeline</h3>
+    <p class="section-subtitle">Run the analysis steps on ingested feedback</p>
+    <div class="pipeline-actions">
+      <button class="btn btn-secondary" id="btn-estimate-themes">🏷️ Estimate Themes</button>
+      <button class="btn btn-secondary" id="btn-generate-actions-pipeline">✅ Generate Actions</button>
+    </div>
+    <div id="pipeline-result" class="result-box"></div>
+  </div>
+</div>

@@ -1,0 +1,39 @@
+---
+// Actions: kanban board of recommended work items by status column.
+---
+
+<div class="section-header">
+  <div>
+    <h1>Actions</h1>
+    <p class="section-subtitle">Recommended work items and ownership tracking</p>
+  </div>
+  <div class="header-actions">
+    <button class="btn btn-primary" id="btn-load-actions">Load Actions</button>
+    <button class="btn btn-secondary" id="btn-generate-actions">⚡ Generate from Themes</button>
+  </div>
+</div>
+
+<div class="card">
+  <div class="kanban-board" id="kanban-board">
+    <div class="kanban-column" data-status="pending">
+      <div class="kanban-header pending">Pending</div>
+      <div class="kanban-list" id="kanban-pending"></div>
+    </div>
+    <div class="kanban-column" data-status="assigned">
+      <div class="kanban-header assigned">Assigned</div>
+      <div class="kanban-list" id="kanban-assigned"></div>
+    </div>
+    <div class="kanban-column" data-status="in_progress">
+      <div class="kanban-header in-progress">In Progress</div>
+      <div class="kanban-list" id="kanban-in_progress"></div>
+    </div>
+    <div class="kanban-column" data-status="resolved">
+      <div class="kanban-header resolved">Resolved</div>
+      <div class="kanban-list" id="kanban-resolved"></div>
+    </div>
+    <div class="kanban-column" data-status="closed">
+      <div class="kanban-header closed">Closed</div>
+      <div class="kanban-list" id="kanban-closed"></div>
+    </div>
+  </div>
+</div>

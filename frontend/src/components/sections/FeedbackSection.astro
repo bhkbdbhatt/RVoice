@@ -1,0 +1,68 @@
+---
+// Feedback: raw customer feedback table with filters and pagination.
+---
+
+<div class="section-header">
+  <div>
+    <h1>Feedback</h1>
+    <p class="section-subtitle">Raw customer feedback across all channels</p>
+  </div>
+  <div class="header-actions">
+    <button class="btn btn-primary" id="btn-load-feedback">Load Feedback</button>
+  </div>
+</div>
+
+<div class="card filter-card">
+  <div class="filter-row">
+    <div class="filter-group">
+      <label>Source</label>
+      <select id="filter-feedback-source" title="Filter by source">
+        <option value="">All Sources</option>
+      </select>
+    </div>
+    <div class="filter-group">
+      <label>Product</label>
+      <select id="filter-feedback-product" title="Filter by product">
+        <option value="">All Products</option>
+      </select>
+    </div>
+    <div class="filter-group">
+      <label>Store</label>
+      <select id="filter-feedback-store" title="Filter by store">
+        <option value="">All Stores</option>
+      </select>
+    </div>
+    <div class="filter-group">
+      <label>Journey Stage</label>
+      <select id="filter-feedback-stage" title="Filter by journey stage">
+        <option value="">All Stages</option>
+      </select>
+    </div>
+    <div class="filter-group grow">
+      <label>Search</label>
+      <input type="text" id="search-feedback" placeholder="Search feedback text..." />
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="table-wrapper">
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Text</th>
+          <th>Source</th>
+          <th>Product</th>
+          <th>Store</th>
+          <th>Stage</th>
+          <th>Rating</th>
+          <th>Timestamp</th>
+        </tr>
+      </thead>
+      <tbody id="feedback-table-body">
+        <tr><td colspan="7" class="table-empty">Load feedback to view records</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="pagination" id="feedback-pagination"></div>
+</div>

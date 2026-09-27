@@ -1,0 +1,184 @@
+/*Chat widget styles –‑ these match the dashboard’s existing colour palette
+ and are scoped to #chat-widget-container to avoid global collisions */
+
+/* ---------- Container ---------- */
+#chat-widget-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 350px;
+  max-height: 500px;
+  background: #ffffff;
+  border: 1px solid #cccccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  display: flex;
+  flex-direction: column;
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
+  z-index: 1000;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Show when the .open class is present */
+#chat-widget-container.open {
+  transform: translateY(0);
+}
+
+/* ---------- Header (click to collapse/expand) ---------- */
+#chat-header {
+  background: #007bff;
+  color: #ffffff;
+  padding: 10px;
+  border-radius: 8px 8px 0 0;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* ---------- Message list ---------- */
+.chat-messages {
+  flex: 1;
+  padding: 10px;
+  overflow-y: auto;
+  margin: 0;
+  list-style: none;
+}
+
+/* ---------- Individual bubble ---------- */
+.chat-message {
+  margin-bottom: 10px;
+  padding: 8px 12px;
+  border-radius: 18px;
+  max-width: 80%;
+  word-wrap: break-word;
+}
+
+/* User messages – aligned to the right */
+.chat-message.user {
+  background: #007bff;
+  color: #ffffff;
+  align-self: flex-end;
+}
+
+/* Bot messages – aligned to the left */
+.chat-message.bot {
+  background: #e2e2e2;
+  color: #000000;
+  align-self: flex-start;
+}
+
+/* ---------- Input form ---------- */
+#chat-form {
+  display: flex;
+  padding: 10px;
+  border-top: 1px solid #dddddd;
+  background: #f9f9f9;
+}
+
+/* Text input */
+#chat-input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #cccccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+/* Submit button */
+#chat-form button {
+  margin-left: 8px;
+  padding: 8px 12px;
+  background: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+/* ---------- Typing indicator ---------- */
+.chat-typing {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 8px 14px;
+  color: #64748b;
+  font-size: 12px;
+}
+.chat-typing[hidden] {
+  display: none;
+}
+.chat-typing .dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #94a3b8;
+  animation: chat-bounce 1.2s infinite ease-in-out;
+}
+.chat-typing .dot:nth-child(2) {
+  animation-delay: 0.15s;
+}
+.chat-typing .dot:nth-child(3) {
+  animation-delay: 0.3s;
+}
+@keyframes chat-bounce {
+  0%, 60%, 100% { transform: translateY(0); opacity: 0.4; }
+  30% { transform: translateY(-4px); opacity: 1; }
+}
+
+/* ---------- Disabled input while awaiting reply ---------- */
+#chat-input:disabled {
+  background: #f1f5f9;
+  color: #64748b;
+  cursor: not-allowed;
+}
+#chat-form button:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+#chat-form button.is-loading {
+  position: relative;
+  color: transparent;
+  pointer-events: none;
+}
+#chat-form button.is-loading::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 12px;
+  height: 12px;
+  margin: -6px 0 0 -6px;
+  border: 2px solid rgba(255,255,255,0.4);
+  border-top-color: #fff;
+  border-radius: 50%;
+  animation: chat-spin 0.7s linear infinite;
+}
+@keyframes chat-spin { to { transform: rotate(360deg); } }
+
+/* ---------- Structured result chips (from backend `data`) ---------- */
+.chat-data-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 2px 0 10px 12px;
+}
+.chat-chip {
+  background: #e0f2fe;
+  color: #075985;
+  border: 1px solid #bae6fd;
+  border-radius: 999px;
+  padding: 4px 10px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: default;
+}
+
+/* ---------- Scrollbar (Webkit) ---------- */
+.chat-messages {
+  scrollbar-width: thin;
+  scrollbar-color: #cbd5e1 transparent;
+}
+.chat-messages::-webkit-scrollbar { width: 8px; }
+.chat-messages::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 4px; }
+.chat-messages::-webkit-scrollbar-track { background: transparent; }

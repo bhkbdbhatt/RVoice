@@ -1,0 +1,267 @@
+[
+  {
+    "actionId": "759632b9-3ca0-4d4a-9862-e0ece06f381b",
+    "themeId": "theme-0347a238-7387-4a21-963e-1811d503d016",
+    "sourceId": "0347a238-7387-4a21-963e-1811d503d016",
+    "product": "checkout",
+    "store": "store-42",
+    "journeyStage": "checkout",
+    "sentiment": "negative",
+    "sentimentScore": -1,
+    "confidence": 0.53,
+    "issueScore": 2.3,
+    "severity": "medium",
+    "status": "assigned",
+    "assignedOwner": "ecommerce-product-owner",
+    "recommendations": [
+      {
+        "aspect": "checkout",
+        "sentiment": "negative",
+        "sentimentScore": -1,
+        "confidence": 0.53,
+        "recommendedAction": "Review checkout funnel and payment errors for the affected channel.",
+        "owner": "ecommerce-product-owner"
+      }
+    ],
+    "recommendedAt": "2026-08-07T10:38:29.767Z",
+    "notes": [],
+    "createdAt": "2026-08-07T10:38:29.768Z",
+    "updatedAt": "2026-08-07T10:48:37.866Z"
+  },
+  {
+    "actionId": "a3412041-be87-4850-8f2c-9b40006f931b",
+    "themeId": "theme-0bd24660-f2a2-4422-b3e6-b1c0f1c5cb18",
+    "sourceId": "0bd24660-f2a2-4422-b3e6-b1c0f1c5cb18",
+    "product": "delivery",
+    "store": "store-42",
+    "journeyStage": "delivery",
+    "sentiment": "neutral",
+    "sentimentScore": 0,
+    "confidence": 0.3,
+    "issueScore": 2.2,
+    "severity": "medium",
+    "status": "pending",
+    "assignedOwner": "logistics-lead",
+    "recommendations": [
+      {
+        "aspect": "delivery",
+        "sentiment": "neutral",
+        "sentimentScore": 0,
+        "confidence": 0.3,
+        "recommendedAction": "Investigate delivery exceptions and update logistics partner SLA.",
+        "owner": "logistics-lead"
+      },
+      {
+        "aspect": "app",
+        "sentiment": "neutral",
+        "sentimentScore": 0,
+        "confidence": 0.3,
+        "recommendedAction": "Consolidate feedback into the VoC dashboard and assign to the relevant team.",
+        "owner": "customer-experience-lead"
+      }
+    ],
+    "recommendedAt": "2026-08-07T10:38:29.767Z",
+    "notes": [],
+    "createdAt": "2026-08-07T10:38:29.768Z"
+  },
+  {
+    "actionId": "5e0c9eaa-0683-4dbf-8d9f-2d06af57469d",
+    "themeId": "theme-b0785bc3-af23-4ab1-aa7d-8f90292f3a90",
+    "sourceId": "b0785bc3-af23-4ab1-aa7d-8f90292f3a90",
+    "product": "support",
+    "store": "store-15",
+    "journeyStage": "support",
+    "sentiment": "neutral",
+    "sentimentScore": 0,
+    "confidence": 0.3,
+    "issueScore": 2.2,
+    "severity": "medium",
+    "status": "pending",
+    "assignedOwner": "support-manager",
+    "recommendations": [
+      {
+        "aspect": "customer support",
+        "sentiment": "neutral",
+        "sentimentScore": 0,
+        "confidence": 0.3,
+        "recommendedAction": "Audit recent contact center interactions and retrain frontline agents.",
+        "owner": "support-manager"
+      },
+      {
+        "aspect": "store experience",
+        "sentiment": "neutral",
+        "sentimentScore": 0,
+        "confidence": 0.3,
+        "recommendedAction": "Review store staff performance and fix any location service gaps.",
+        "owner": "store-ops-manager"
+      }
+    ],
+    "recommendedAt": "2026-08-07T10:38:29.767Z",
+    "notes": [],
+    "createdAt": "2026-08-07T10:38:29.768Z"
+  },
+  {
+    "actionId": "9a950d16-3587-42ad-b5ce-0fd5787541a7",
+    "themeId": "theme-cbb4a563-0d6f-4ff4-b6ee-921d25359913",
+    "sourceId": "cbb4a563-0d6f-4ff4-b6ee-921d25359913",
+    "product": "product",
+    "store": "store-42",
+    "journeyStage": "post-purchase",
+    "sentiment": "positive",
+    "sentimentScore": 1,
+    "confidence": 0.77,
+    "issueScore": 0.4,
+    "severity": "low",
+    "status": "pending",
+    "assignedOwner": "ecommerce-product-owner",
+    "recommendations": [
+      {
+        "aspect": "checkout",
+        "sentiment": "positive",
+        "sentimentScore": 1,
+        "confidence": 0.77,
+        "recommendedAction": "Review checkout funnel and payment errors for the affected channel.",
+        "owner": "ecommerce-product-owner"
+      },
+      {
+        "aspect": "product quality",
+        "sentiment": "positive",
+        "sentimentScore": 1,
+        "confidence": 0.77,
+        "recommendedAction": "Initiate quality review for the referenced SKU and update packaging.",
+        "owner": "product-quality-manager"
+      },
+      {
+        "aspect": "app",
+        "sentiment": "positive",
+        "sentimentScore": 1,
+        "confidence": 0.77,
+        "recommendedAction": "Consolidate feedback into the VoC dashboard and assign to the relevant team.",
+        "owner": "customer-experience-lead"
+      }
+    ],
+    "recommendedAt": "2026-08-07T10:38:29.767Z",
+    "notes": [],
+    "createdAt": "2026-08-07T10:38:29.768Z"
+  },
+  {
+    "actionId": "4cd6d4a7-bf74-43bd-8b00-ce58e6097098",
+    "themeId": "theme-955d1a18-872e-44f1-bec4-933d2e40c178",
+    "sourceId": "955d1a18-872e-44f1-bec4-933d2e40c178",
+    "product": "store",
+    "store": "store-15",
+    "journeyStage": "purchase",
+    "sentiment": "neutral",
+    "sentimentScore": 0,
+    "confidence": 0.3,
+    "issueScore": 1.2,
+    "severity": "low",
+    "status": "pending",
+    "assignedOwner": "store-ops-manager",
+    "recommendations": [
+      {
+        "aspect": "store experience",
+        "sentiment": "neutral",
+        "sentimentScore": 0,
+        "confidence": 0.3,
+        "recommendedAction": "Review store staff performance and fix any location service gaps.",
+        "owner": "store-ops-manager"
+      }
+    ],
+    "recommendedAt": "2026-08-07T10:38:29.768Z",
+    "notes": [],
+    "createdAt": "2026-08-07T10:38:29.768Z"
+  },
+  {
+    "actionId": "e0a5c682-2390-4068-948d-1f40f3f0e2b1",
+    "themeId": "theme-2e67d415-6901-4610-ae6f-9988fc01cfac",
+    "sourceId": "2e67d415-6901-4610-ae6f-9988fc01cfac",
+    "product": "app",
+    "store": "store-42",
+    "journeyStage": "awareness",
+    "sentiment": "positive",
+    "sentimentScore": 1,
+    "confidence": 0.73,
+    "issueScore": 0.4,
+    "severity": "low",
+    "status": "pending",
+    "assignedOwner": "customer-experience-lead",
+    "recommendations": [
+      {
+        "aspect": "app",
+        "sentiment": "positive",
+        "sentimentScore": 1,
+        "confidence": 0.73,
+        "recommendedAction": "Consolidate feedback into the VoC dashboard and assign to the relevant team.",
+        "owner": "customer-experience-lead"
+      }
+    ],
+    "recommendedAt": "2026-08-07T10:38:29.768Z",
+    "notes": [],
+    "createdAt": "2026-08-07T10:38:29.768Z"
+  },
+  {
+    "actionId": "683728f9-0acd-415e-bb0d-98872bd014d2",
+    "themeId": "theme-1b0c58c1-6ebb-47e0-9bf3-8352fb27aa79",
+    "sourceId": "1b0c58c1-6ebb-47e0-9bf3-8352fb27aa79",
+    "product": "delivery",
+    "store": "store-15",
+    "journeyStage": "delivery",
+    "sentiment": "neutral",
+    "sentimentScore": 0,
+    "confidence": 0.28,
+    "issueScore": 1.1,
+    "severity": "low",
+    "status": "pending",
+    "assignedOwner": "logistics-lead",
+    "recommendations": [
+      {
+        "aspect": "delivery",
+        "sentiment": "neutral",
+        "sentimentScore": 0,
+        "confidence": 0.28,
+        "recommendedAction": "Investigate delivery exceptions and update logistics partner SLA.",
+        "owner": "logistics-lead"
+      }
+    ],
+    "recommendedAt": "2026-08-07T10:38:29.768Z",
+    "notes": [],
+    "createdAt": "2026-08-07T10:38:29.768Z"
+  },
+  {
+    "actionId": "5407130d-d158-4b1a-8a30-b0fa9ac2a9c8",
+    "themeId": "theme-e6aa6728-6aef-4557-85ec-624f38a95cd4",
+    "sourceId": "e6aa6728-6aef-4557-85ec-624f38a95cd4",
+    "product": "checkout",
+    "store": "store-42",
+    "journeyStage": "checkout",
+    "sentiment": "neutral",
+    "sentimentScore": 0,
+    "confidence": 0.3,
+    "issueScore": 2.2,
+    "severity": "medium",
+    "status": "pending",
+    "assignedOwner": "ecommerce-product-owner",
+    "recommendations": [
+      {
+        "aspect": "checkout",
+        "sentiment": "neutral",
+        "sentimentScore": 0,
+        "confidence": 0.3,
+        "recommendedAction": "Review checkout funnel and payment errors for the affected channel.",
+        "owner": "ecommerce-product-owner"
+      },
+      {
+        "aspect": "app",
+        "sentiment": "neutral",
+        "sentimentScore": 0,
+        "confidence": 0.3,
+        "recommendedAction": "Consolidate feedback into the VoC dashboard and assign to the relevant team.",
+        "owner": "customer-experience-lead"
+      }
+    ],
+    "recommendedAt": "2026-08-07T10:38:29.768Z",
+    "notes": [],
+    "createdAt": "2026-08-07T10:38:29.768Z"
+  }
+]

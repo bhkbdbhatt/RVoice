@@ -1,0 +1,35 @@
+---
+// Local developer login screen with role quick-picks (driven by main.js).
+---
+
+<div class="login-screen" id="login-screen">
+  <div class="login-box">
+    <h1>VoC Login</h1>
+    <p class="login-subtitle">Sign in to access the Command Center.</p>
+    <form id="login-form" novalidate>
+      <div class="login-error" id="login-error" role="alert" hidden></div>
+      <label for="login-username">
+        Username
+        <input type="text" id="login-username" placeholder="admin" autocomplete="username" aria-describedby="login-error" />
+      </label>
+      <label for="login-email">
+        Email
+        <input type="email" id="login-email" placeholder="admin@example.com" autocomplete="email" aria-describedby="login-error" />
+      </label>
+      <label for="login-roles">
+        Roles
+        <input type="text" id="login-roles" placeholder="admin,manager" autocomplete="off" aria-describedby="login-roles-hint login-error" />
+      </label>
+      <div class="login-role-chips" id="login-role-chips">
+        <span class="login-role-hint" id="login-roles-hint">Quick select:</span>
+        <button type="button" class="role-chip" data-role="admin">admin</button>
+        <button type="button" class="role-chip" data-role="manager">manager</button>
+        <button type="button" class="role-chip" data-role="ingest">ingest</button>
+        <button type="button" class="role-chip" data-role="analyst">analyst</button>
+        <button type="button" class="role-chip" data-role="viewer">viewer</button>
+      </div>
+      <button type="submit" class="btn btn-primary" id="login-submit">Login</button>
+    </form>
+    <p class="login-hint">For local development, start the backend with <code>REQUIRE_AUTH=false</code> and <code>LOCAL_AUTH_ENABLED=true</code>.</p>
+  </div>
+</div>

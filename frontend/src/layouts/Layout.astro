@@ -1,0 +1,23 @@
+---
+// Base layout: shared <head>, CSS, and default slots for the dashboard shell.
+interface Props {
+  title?: string;
+}
+const { title = 'Retail VoC Command Center' } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title}</title>
+    <link rel="stylesheet" href="/styles.css" />
+    <link rel="stylesheet" href="/chatWidget.css" />
+    <!-- Tracking pixel: streams this dashboard's own page-view analytics into the platform -->
+    <script is:inline src="/pixel.js" data-source="web-pixel"></script>
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>

@@ -1,0 +1,41 @@
+---
+// Spikes: emerging issues list with sentiment/search filters.
+// Each row opens a detail modal (managed by main.js).
+---
+
+<div class="section-header">
+  <div>
+    <h1>Emerging Issues</h1>
+    <p class="section-subtitle">Detected spikes and anomalies requiring attention</p>
+  </div>
+  <div class="header-actions">
+    <button class="btn btn-primary" id="btn-load-spikes">Load Spikes</button>
+  </div>
+</div>
+
+<div class="card filter-card">
+  <div class="filter-row">
+    <div class="filter-group">
+      <label>Sentiment</label>
+      <select id="filter-spike-sentiment" title="Filter by sentiment">
+        <option value="">All sentiments</option>
+        <option value="negative">Negative</option>
+        <option value="positive">Positive</option>
+        <option value="neutral">Neutral</option>
+      </select>
+    </div>
+    <div class="filter-group grow">
+      <label>Search</label>
+      <input type="text" id="search-spikes" placeholder="Search spike text..." />
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div id="spikes-list" class="spikes-list">
+    <div class="chart-empty">
+      <p>Load spikes to view detected trends.</p>
+      <p class="spike-empty-hint">Little tip: spikes are derived from the themes you extract. Load themes first, then run spike detection.</p>
+    </div>
+  </div>
+</div>

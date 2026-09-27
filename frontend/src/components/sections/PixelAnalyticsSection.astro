@@ -1,0 +1,91 @@
+---
+// Pixel Analytics: live tracking-pixel visitor intelligence.
+// Fetched by main.js via GET /api/pixel/analytics and rendered here.
+---
+
+<div class="section-header">
+  <div>
+    <h1>Visitors</h1>
+    <p class="section-subtitle">Real-time web analytics streamed from the tracking pixel</p>
+  </div>
+  <div class="header-actions">
+    <span class="live-indicator" id="pixel-live-indicator">
+      <span class="live-dot"></span> <span id="pixel-live-text">Live</span>
+    </span>
+    <button class="btn btn-secondary" id="btn-refresh-pixel">🔄 Refresh</button>
+  </div>
+</div>
+
+<div class="kpi-grid">
+  <div class="kpi-card">
+    <div class="kpi-icon">👁️</div>
+    <div class="kpi-value" id="kpi-visits">0</div>
+    <div class="kpi-label">Total Visits</div>
+  </div>
+  <div class="kpi-card">
+    <div class="kpi-icon">🧑‍🤝‍🧑</div>
+    <div class="kpi-value" id="kpi-unique-visitors">0</div>
+    <div class="kpi-label">Unique Visitors</div>
+  </div>
+  <div class="kpi-card">
+    <div class="kpi-icon">📄</div>
+    <div class="kpi-value" id="kpi-pages">0</div>
+    <div class="kpi-label">Pages Tracked</div>
+  </div>
+  <div class="kpi-card">
+    <div class="kpi-icon">🔗</div>
+    <div class="kpi-value" id="kpi-referrers">0</div>
+    <div class="kpi-label">Referrers</div>
+  </div>
+</div>
+
+<div class="charts-grid">
+  <div class="card">
+    <h3>Top Pages</h3>
+    <div class="chart-bars" id="chart-pixel-pages">
+      <div class="chart-empty">Waiting for pixel traffic</div>
+    </div>
+  </div>
+  <div class="card">
+    <h3>Top Referrers</h3>
+    <div class="chart-bars" id="chart-pixel-referrers">
+      <div class="chart-empty">Waiting for pixel traffic</div>
+    </div>
+  </div>
+  <div class="card">
+    <h3>Journey Stages</h3>
+    <div class="chart-bars" id="chart-pixel-stages">
+      <div class="chart-empty">Waiting for pixel traffic</div>
+    </div>
+  </div>
+  <div class="card">
+    <h3>Products</h3>
+    <div class="chart-bars" id="chart-pixel-products">
+      <div class="chart-empty">Waiting for pixel traffic</div>
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header-row">
+    <h3>Live Visit Feed</h3>
+    <span class="live-badge"><span class="live-dot"></span> updating every 10s</span>
+  </div>
+  <div class="table-wrap">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Visitor</th>
+          <th>Page</th>
+          <th>Referrer</th>
+          <th>Product</th>
+          <th>Stage</th>
+          <th>Time</th>
+        </tr>
+      </thead>
+      <tbody id="pixel-visit-body">
+        <tr><td colspan="6" class="table-empty">No visits yet — embed the pixel to start streaming</td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>

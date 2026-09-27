@@ -1,0 +1,52 @@
+---
+// Themes: extracted topics with sentiment, severity, and issue scoring.
+---
+
+<div class="section-header">
+  <div>
+    <h1>Themes</h1>
+    <p class="section-subtitle">Extracted topics, sentiment, and issue scoring</p>
+  </div>
+  <div class="header-actions">
+    <button class="btn btn-primary" id="btn-load-themes">Load Themes</button>
+  </div>
+</div>
+
+<div class="card filter-card">
+  <div class="filter-row">
+    <div class="filter-group">
+      <label>Product</label>
+      <select id="filter-theme-product" title="Filter by product">
+        <option value="">All Products</option>
+      </select>
+    </div>
+    <div class="filter-group">
+      <label>Severity</label>
+      <select id="filter-theme-severity" title="Filter by severity">
+        <option value="">All Severities</option>
+        <option value="high">High</option>
+        <option value="medium">Medium</option>
+        <option value="low">Low</option>
+      </select>
+    </div>
+    <div class="filter-group">
+      <label>Sentiment</label>
+      <select id="filter-theme-sentiment" title="Filter by sentiment">
+        <option value="">All Sentiments</option>
+        <option value="positive">Positive</option>
+        <option value="negative">Negative</option>
+        <option value="neutral">Neutral</option>
+      </select>
+    </div>
+    <div class="filter-group grow">
+      <label>Search</label>
+      <input type="text" id="search-themes" placeholder="Search themes..." />
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div id="themes-grid" class="themes-grid">
+    <div class="chart-empty">Load themes to view extracted topics</div>
+  </div>
+</div>

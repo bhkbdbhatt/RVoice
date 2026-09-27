@@ -1,0 +1,15 @@
+---
+// Persistent offline banner shown when the API is unreachable.
+---
+
+<div class="offline-banner" id="offline-banner" role="alert" hidden>
+  <span class="offline-banner-icon" aria-hidden="true">⚠️</span>
+  <span>Connection to the server was lost. Some data may be out of date.</span>
+  <button class="btn btn-secondary btn-sm" id="btn-retry-connection">Retry</button>
+</div>
+
+<noscript>
+  <div class="offline-banner" style="position: static;">
+    <span>This dashboard requires JavaScript to load data. Please enable JavaScript and reload.</span>
+  </div>
+</noscript>

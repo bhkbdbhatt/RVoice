@@ -1,0 +1,30 @@
+{
+  "name": "voc-backend",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch src/index.js",
+    "start": "node src/index.js",
+    "lint": "eslint .",
+    "test:integration": "node src/tests/integrationTest.js",
+    "test:unit": "node src/tests/nlpServiceTest.js && node src/tests/chatServiceTest.js && node src/tests/pixelServiceTest.js && node src/tests/aiModelServiceTest.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "compromise": "^14.0.0",
+    "cors": "^2.8.5",
+    "express": "^4.18.4",
+    "express-jwt": "^8.4.0",
+    "jwks-rsa": "^3.0.1",
+    "uuid": "^9.0.1"
+  },
+  "optionalDependencies": {
+    "openai": "^4.0.0",
+    "@xenova/transformers": "^2.17.2"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.0",
+    "nodemon": "^3.1.14"
+  }
+}

@@ -1,0 +1,76 @@
+---
+// Overview: KPI cards, distribution charts, and recent spikes.
+---
+
+<div class="section-header">
+  <div>
+    <h1>Overview</h1>
+    <p class="section-subtitle">Real-time Voice of Customer intelligence</p>
+  </div>
+  <div class="header-actions">
+    <button class="btn btn-secondary" id="btn-refresh-overview">🔄 Refresh</button>
+    <button class="btn btn-primary" id="btn-load-overview">Load Data</button>
+  </div>
+</div>
+
+<div class="kpi-grid">
+  <div class="kpi-card">
+    <div class="kpi-icon">💬</div>
+    <div class="kpi-value" id="kpi-feedback">0</div>
+    <div class="kpi-label">Total Feedback</div>
+  </div>
+  <div class="kpi-card">
+    <div class="kpi-icon">🏷️</div>
+    <div class="kpi-value" id="kpi-themes">0</div>
+    <div class="kpi-label">Themes</div>
+  </div>
+  <div class="kpi-card">
+    <div class="kpi-icon">✅</div>
+    <div class="kpi-value" id="kpi-actions">0</div>
+    <div class="kpi-label">Actions</div>
+  </div>
+  <div class="kpi-card">
+    <div class="kpi-icon">🔗</div>
+    <div class="kpi-value" id="kpi-clusters">0</div>
+    <div class="kpi-label">Clusters</div>
+  </div>
+  <div class="kpi-card danger-card">
+    <div class="kpi-icon">🚨</div>
+    <div class="kpi-value" id="kpi-spikes">0</div>
+    <div class="kpi-label">Emerging Issues</div>
+  </div>
+</div>
+
+<div class="charts-grid">
+  <div class="card">
+    <h3>Sentiment Distribution</h3>
+    <div class="chart-bars" id="chart-sentiment">
+      <div class="chart-empty">No data</div>
+    </div>
+  </div>
+  <div class="card">
+    <h3>Severity Distribution</h3>
+    <div class="chart-bars" id="chart-severity">
+      <div class="chart-empty">No data</div>
+    </div>
+  </div>
+  <div class="card">
+    <h3>Product Breakdown</h3>
+    <div class="chart-bars" id="chart-product">
+      <div class="chart-empty">No data</div>
+    </div>
+  </div>
+  <div class="card">
+    <h3>Journey Stage</h3>
+    <div class="chart-bars" id="chart-stage">
+      <div class="chart-empty">No data</div>
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <h3>Recent Spikes</h3>
+  <div id="overview-spikes" class="list-container">
+    <div class="chart-empty">Load data to see emerging issues</div>
+  </div>
+</div>

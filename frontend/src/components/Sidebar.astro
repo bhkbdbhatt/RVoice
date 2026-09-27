@@ -1,0 +1,54 @@
+---
+// Fixed sidebar: brand, role-aware navigation, and footer status.
+---
+
+<aside class="sidebar">
+  <div class="sidebar-brand">
+    <div class="brand-logo">VoC</div>
+    <div class="brand-text">
+      <div class="brand-title">Retail VoC</div>
+      <div class="brand-subtitle">Command Center</div>
+    </div>
+  </div>
+
+  <nav class="sidebar-nav">
+    <button class="nav-item active" data-section="overview" aria-label="Overview">
+      <span class="nav-icon" aria-hidden="true">📊</span> Overview
+    </button>
+    <button class="nav-item" data-section="pixel" aria-label="Visitors">
+      <span class="nav-icon" aria-hidden="true">🫀</span> Visitors
+      <span class="nav-badge danger" id="nav-pixel-count">0</span>
+    </button>
+    <button class="nav-item" data-section="feedback" aria-label="Feedback">
+      <span class="nav-icon" aria-hidden="true">💬</span> Feedback
+      <span class="nav-badge" id="nav-feedback-count">0</span>
+    </button>
+    <button class="nav-item" data-section="themes" aria-label="Themes">
+      <span class="nav-icon" aria-hidden="true">🏷️</span> Themes
+      <span class="nav-badge" id="nav-theme-count">0</span>
+    </button>
+    <button class="nav-item" data-section="actions" aria-label="Actions">
+      <span class="nav-icon" aria-hidden="true">✅</span> Actions
+      <span class="nav-badge" id="nav-action-count">0</span>
+    </button>
+    <button class="nav-item" data-section="clusters" aria-label="Clusters">
+      <span class="nav-icon" aria-hidden="true">🔗</span> Clusters
+    </button>
+    <button class="nav-item" data-section="spikes" aria-label="Spikes">
+      <span class="nav-icon" aria-hidden="true">🚨</span> Spikes
+      <span class="nav-badge danger" id="nav-spike-count">0</span>
+    </button>
+    <button class="nav-item" data-section="ingest" aria-label="Ingest">
+      <span class="nav-icon" aria-hidden="true">📥</span> Ingest
+    </button>
+  </nav>
+
+  <div class="sidebar-user" id="sidebar-user"></div>
+  <div class="sidebar-footer">
+    <div class="health-indicator" id="health-indicator">
+      <span class="health-dot"></span>
+      <span id="health-text">Checking...</span>
+    </div>
+    <div class="clock" id="clock">--:--:--</div>
+  </div>
+</aside>

@@ -1,0 +1,38 @@
+export const sampleFeedback = [
+  {
+    source: 'review',
+    origin: 'app-store',
+    timestamp: '2026-08-03T12:00:00.000Z',
+    text: 'Checkout failed on mobile, payment page crashed.',
+    rating: 2,
+    product: 'SKU-1234',
+    journeyStage: 'checkout',
+  },
+  {
+    source: 'ticket',
+    origin: 'support-portal',
+    timestamp: '2026-08-03T14:00:00.000Z',
+    text: 'Delivery was delayed two days and customer support was not helpful.',
+    rating: 1,
+    product: 'SKU-5678',
+    journeyStage: 'delivery',
+  },
+  {
+    source: 'social',
+    origin: 'twitter',
+    timestamp: '2026-08-03T15:30:00.000Z',
+    text: 'Love the new store team, but the checkout line was too long.',
+    rating: null,
+    store: 'store-12',
+    journeyStage: 'checkout',
+  },
+  {
+    source: 'survey',
+    origin: 'post-visit-survey',
+    timestamp: '2026-08-03T16:45:00.000Z',
+    text: 'Product quality is great, but shipping was slow.',
+    rating: 4,
+    product: 'SKU-1234',
+    journeyStage: 'delivery',
+  },
+];

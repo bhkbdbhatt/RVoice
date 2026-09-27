@@ -1,0 +1,121 @@
+[
+  {
+    "id": "0347a238-7387-4a21-963e-1811d503d016",
+    "source": "web",
+    "origin": "web",
+    "timestamp": "2026-08-07T10:37:47.486Z",
+    "text": "The checkout process was extremely slow and kept failing on payment",
+    "rating": 1,
+    "product": "checkout",
+    "store": "store-42",
+    "journeyStage": "checkout",
+    "metadata": {}
+  },
+  {
+    "id": "0bd24660-f2a2-4422-b3e6-b1c0f1c5cb18",
+    "source": "email",
+    "origin": "email",
+    "timestamp": "2026-08-07T10:37:47.486Z",
+    "text": "Delivery took 5 days longer than promised, very disappointed",
+    "rating": 2,
+    "product": "delivery",
+    "store": "store-42",
+    "journeyStage": "delivery",
+    "metadata": {}
+  },
+  {
+    "id": "b0785bc3-af23-4ab1-aa7d-8f90292f3a90",
+    "source": "app",
+    "origin": "app",
+    "timestamp": "2026-08-07T10:37:47.486Z",
+    "text": "Customer support was unhelpful and I had to wait 30 minutes",
+    "rating": 1,
+    "product": "support",
+    "store": "store-15",
+    "journeyStage": "support",
+    "metadata": {}
+  },
+  {
+    "id": "cbb4a563-0d6f-4ff4-b6ee-921d25359913",
+    "source": "web",
+    "origin": "web",
+    "timestamp": "2026-08-07T10:37:47.486Z",
+    "text": "The product quality is excellent, very happy with my purchase",
+    "rating": 5,
+    "product": "product",
+    "store": "store-42",
+    "journeyStage": "post-purchase",
+    "metadata": {}
+  },
+  {
+    "id": "955d1a18-872e-44f1-bec4-933d2e40c178",
+    "source": "store",
+    "origin": "store",
+    "timestamp": "2026-08-07T10:37:47.486Z",
+    "text": "Store staff were rude and unhelpful during my visit",
+    "rating": 2,
+    "product": "store",
+    "store": "store-15",
+    "journeyStage": "purchase",
+    "metadata": {}
+  },
+  {
+    "id": "2e67d415-6901-4610-ae6f-9988fc01cfac",
+    "source": "app",
+    "origin": "app",
+    "timestamp": "2026-08-07T10:37:47.486Z",
+    "text": "Love the new app interface, very easy to use",
+    "rating": 5,
+    "product": "app",
+    "store": "store-42",
+    "journeyStage": "awareness",
+    "metadata": {}
+  },
+  {
+    "id": "1b0c58c1-6ebb-47e0-9bf3-8352fb27aa79",
+    "source": "social",
+    "origin": "social",
+    "timestamp": "2026-08-07T10:37:47.486Z",
+    "text": "The delivery driver left my package in the rain",
+    "rating": 1,
+    "product": "delivery",
+    "store": "store-15",
+    "journeyStage": "delivery",
+    "metadata": {}
+  },
+  {
+    "id": "e6aa6728-6aef-4557-85ec-624f38a95cd4",
+    "source": "app",
+    "origin": "app",
+    "timestamp": "2026-08-07T10:37:47.486Z",
+    "text": "Checkout keeps crashing on mobile, cannot complete my order",
+    "rating": 1,
+    "product": "checkout",
+    "store": "store-42",
+    "journeyStage": "checkout",
+    "metadata": {}
+  },
+  {
+    "id": "71f6a3a1-8315-4238-a376-e33825dc50ce",
+    "source": "zendesk",
+    "origin": "ticket",
+    "externalId": "1001",
+    "text": "The checkout page keeps crashing on mobile",
+    "rating": null,
+    "product": "checkout",
+    "store": null,
+    "journeyStage": "checkout",
+    "metadata": {
+      "ticketId": "1001",
+      "subject": "Checkout error",
+      "tags": [
+        "checkout"
+      ],
+      "assigneeId": null,
+      "groupId": null,
+      "url": null
+    },
+    "receivedAt": "2026-08-07T10:30:00Z",
+    "timestamp": "2026-08-07T10:30:00Z"
+  }
+]

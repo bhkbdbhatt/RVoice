@@ -1,0 +1,65 @@
+---
+// RVoice dashboard page — the single-page app shell.
+import Layout from '../layouts/Layout.astro';
+import LoginScreen from '../components/LoginScreen.astro';
+import OfflineBanner from '../components/OfflineBanner.astro';
+import Sidebar from '../components/Sidebar.astro';
+import OverviewSection from '../components/sections/OverviewSection.astro';
+import PixelAnalyticsSection from '../components/sections/PixelAnalyticsSection.astro';
+import FeedbackSection from '../components/sections/FeedbackSection.astro';
+import ThemesSection from '../components/sections/ThemesSection.astro';
+import ActionsSection from '../components/sections/ActionsSection.astro';
+import ClustersSection from '../components/sections/ClustersSection.astro';
+import SpikesSection from '../components/sections/SpikesSection.astro';
+import IngestSection from '../components/sections/IngestSection.astro';
+import Modals from '../components/Modals.astro';
+import ToastContainer from '../components/ToastContainer.astro';
+import AppScripts from '../components/AppScripts.astro';
+---
+
+<Layout>
+  <LoginScreen />
+  <OfflineBanner />
+
+  <div class="app-shell">
+    <Sidebar />
+
+    <main class="main-content">
+      <section class="section active" id="section-overview">
+        <OverviewSection />
+      </section>
+
+      <section class="section" id="section-pixel">
+        <PixelAnalyticsSection />
+      </section>
+
+      <section class="section" id="section-feedback">
+        <FeedbackSection />
+      </section>
+
+      <section class="section" id="section-themes">
+        <ThemesSection />
+      </section>
+
+      <section class="section" id="section-actions">
+        <ActionsSection />
+      </section>
+
+      <section class="section" id="section-clusters">
+        <ClustersSection />
+      </section>
+
+      <section class="section" id="section-spikes">
+        <SpikesSection />
+      </section>
+
+      <section class="section" id="section-ingest">
+        <IngestSection />
+      </section>
+    </main>
+  </div>
+
+  <Modals />
+  <ToastContainer />
+  <AppScripts />
+</Layout>
